@@ -32,6 +32,7 @@ if(new_node){
 
 int Queue::dequeue(){
   if(size>0 && headPtr!=NULL){
+    
     int return_val = headPtr->get_value();
     NodePtr new_head = headPtr->get_next();
     
